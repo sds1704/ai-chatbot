@@ -20,7 +20,7 @@ const App = () => {
     history = history.map(({ role, text }) => ({role,parts:[{text}]}));
 
       const response = await axios.post(
-        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent",
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
         { contents: history },
         {
           headers: {
